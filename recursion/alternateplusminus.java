@@ -17,9 +17,10 @@ sum+=n;
 }
 public static void main(String[] args) {
     System.out.println("enter the number");
-    Scanner sc = new Scanner(System.in);
-    int r =sc.nextInt();
-    System.out.println(series(r));
+    try (Scanner sc = new Scanner(System.in)) {
+        int r =sc.nextInt();
+        System.out.println(series(r));
+    }
 }
         }
     
